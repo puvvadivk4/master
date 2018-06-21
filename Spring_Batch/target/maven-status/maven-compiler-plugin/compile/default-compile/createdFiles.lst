@@ -1,0 +1,12 @@
+axa\springbatch\AXABatch\axastep\AxaItemReader.class
+axa\springbatch\AXABatch\axastep\AxaItemWriterExcel.class
+axa\springbatch\AXABatch\axastep\AxaItemReaderExcel.class
+axa\springbatch\AXABatch\axaentities\Employee.class
+axa\springbatch\AXABatch\controllerbatch\AxaBatchController.class
+axa\springbatch\AXABatch\axastep\AxaItemProcessExcel.class
+axa\springbatch\AXABatch\listner\AxaJobCompletionListner.class
+axa\springbatch\AXABatch\axastep\AxaItemWriter.class
+axa\springbatch\AXABatch\axastep\AxaItemProcessor.class
+axa\springbatch\AXABatch\config\AxaBatchConfig.class
+axa\springbatch\AXABatch\SpringBatchApplication.class
+axa\springbatch\AXABatch\mailconfig\MmailConfig.class
