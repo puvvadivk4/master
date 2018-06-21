@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entity-mappings xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm http://xmlns.jcp.org/xml/ns/persistence/orm_2_1.xsd"
+    version="2.1">  
+  <access>FIELD</access>
+
+  <entity class="axa.jpa.h2.axa_h2_jpa.entitiess.EmployeeEntety">
+    	<named-entity-graph name="XMLempEntityGraph">
+     		<named-attribute-node name="childList" subgraph="ChildernEntity.childAddressList"/>
+     			<subgraph name="ChildernEntity.childAddressList" class="axa.jpa.h2.axa_h2_jpa.entitiess.ChildernEnty">     			
+     				<named-attribute-node name="childAddressList" subgraph="fourthChild"/>
+     				     		
+     			</subgraph>
+     			<subgraph name="fourthChild" class="axa.jpa.h2.axa_h2_jpa.entitiess.ChildAddresses">
+     			<named-attribute-node name="childFourList"/>
+     			</subgraph>     
+   		</named-entity-graph>    
+  </entity>
+
+</entity-mappings>
