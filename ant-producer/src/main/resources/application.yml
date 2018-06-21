@@ -1,0 +1,12 @@
+eureka: 
+  client: 
+    fetch-registry: true
+    register-with-eureka: true
+    service-url: 
+      default-zone: "http://localhost:8671/eureka/"
+
+server:
+  port: 8672
+spring: 
+  application: 
+    name: services-producer
