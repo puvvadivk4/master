@@ -1,0 +1,17 @@
+server:
+  port: 1111
+servers: 
+  - dev.example.com
+  - another.example.com
+spring:
+  application:
+    name: services-registry
+
+
+eurekaw:
+  instance:
+    hostname: localhost
+   
+  
+    
+    
