@@ -1,0 +1,9 @@
+C:\testWCF\IT.Shared.LogBLL\bin\Debug\IT.Shared.LogBLL.dll
+C:\testWCF\IT.Shared.LogBLL\bin\Debug\IT.Shared.LogBLL.pdb
+C:\testWCF\IT.Shared.LogBLL\bin\Debug\IT.Shared.LogDAL.dll
+C:\testWCF\IT.Shared.LogBLL\bin\Debug\IT.Shared.LogEntities.dll
+C:\testWCF\IT.Shared.LogBLL\bin\Debug\IT.Shared.LogDAL.pdb
+C:\testWCF\IT.Shared.LogBLL\bin\Debug\IT.Shared.LogEntities.pdb
+C:\testWCF\IT.Shared.LogBLL\obj\Debug\IT.Shared.LogBLL.csprojResolveAssemblyReference.cache
+C:\testWCF\IT.Shared.LogBLL\obj\Debug\IT.Shared.LogBLL.dll
+C:\testWCF\IT.Shared.LogBLL\obj\Debug\IT.Shared.LogBLL.pdb
