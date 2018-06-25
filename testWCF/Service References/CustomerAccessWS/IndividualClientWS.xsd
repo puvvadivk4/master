@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.clarica.com" elementFormDefault="qualified" targetNamespace="http://www.clarica.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="InitializeCA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="request" type="tns:InitializeCustomerAccessDataRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="InitializeCustomerAccessDataRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="initializeCustomerDataRequestHeader" type="tns:InitializeCustomerAccessDataRequestArguments" />
+      <xs:element minOccurs="0" maxOccurs="1" name="initializeCustomerDataRequestBody" type="tns:InitializeCustomerDataRequestBody" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="InitializeCustomerAccessDataRequestArguments">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="AccessId" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ApplicationVersion" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="AuthenticationToken" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Context" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="CustomAuthenticationReturn" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Domain" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Language" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Requester" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ServiceName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="SessionId" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="SessionKey" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TraceLevel" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="InitializeCustomerDataRequestBody">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="SigninSite" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="InitializeCustomerAccessDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="initializeCustomerAccessDataResponseHeader" type="tns:InitializeCustomerAccessDataResponseHeader" />
+      <xs:element minOccurs="0" maxOccurs="1" name="initializeCustomerAccessDataResponseStatus" type="tns:Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="InitializeCustomerAccessDataResponseHeader">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="ApplicationVersion" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ServiceName" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Result">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="ReturnCode" type="tns:ReturnCodes" />
+      <xs:element minOccurs="1" maxOccurs="1" name="StartTime" type="xs:dateTime" />
+      <xs:element minOccurs="1" maxOccurs="1" name="EndTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ResultMessage" type="tns:ArrayOfResultMessage" />
+      <xs:element minOccurs="1" maxOccurs="1" name="MessageCount" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="ReturnCodes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Success" />
+      <xs:enumeration value="Warning" />
+      <xs:enumeration value="Error" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ArrayOfResultMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResultMessage" nillable="true" type="tns:ResultMessage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ResultMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="MessageCode" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="MessageSeverity" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="MessageInformation" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="MessageDescription" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InitializeCAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ServiceResult" type="tns:InitializeCustomerAccessDataResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataWithSession">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="arguments" type="tns:GetDataWithSessionRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="GetDataWithSessionRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="GetDataWithSessionRequestHeader" type="tns:GetDataWithSessionRequestArguments" />
+      <xs:element minOccurs="0" maxOccurs="1" name="GetDataWithSessionRequestBody" type="tns:GetDataWithSessionRequestBody" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetDataWithSessionRequestArguments">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="AccessId" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ApplicationVersion" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="AuthenticationToken" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Context" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="CustomAuthenticationReturn" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Domain" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Language" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Requester" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ServiceName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="SessionId" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TraceLevel" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetDataWithSessionRequestBody">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="RequestClass" />
+      <xs:element minOccurs="1" maxOccurs="1" name="ContractInfoRequired" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ClientIdOnCXSystem" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="AdvisorId" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="SupportTool" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetDataWithSessionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="getDataWithSessionResponseHeader" type="tns:GetDataWithSessionResponseHeader" />
+      <xs:element minOccurs="0" maxOccurs="1" name="getDataWithSessionResponseStatus" type="tns:Result" />
+      <xs:element minOccurs="0" maxOccurs="1" name="getDataWithSessionResponseBody" type="tns:GetDataWithSessionResponseBody" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetDataWithSessionResponseHeader">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="ApplicationVersion" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ServiceName" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetDataWithSessionResponseBody">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ContractInfo" type="tns:ContractInfo" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ClClientNumber" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ContractInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="SystemOfRecordId" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ContractNumber" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ProductId" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TaxRegistrationType" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="AdvisorId" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ProductInfo" type="tns:ProductInfo" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TaxRegInfo" type="tns:TaxRegInfo" />
+      <xs:element minOccurs="0" maxOccurs="1" name="SpousalIndicator" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProductInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Section" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="SubSection" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="CustomerFriendlyName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ContractNumberLink" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="docCentreDisplayFlag" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="SLFBrandFlag" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TaxRegInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="SubSection" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="FriendlyName" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetDataWithSessionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetDataWithSessionResult" type="tns:GetDataWithSessionResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

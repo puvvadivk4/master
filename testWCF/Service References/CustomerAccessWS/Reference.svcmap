@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3522e5c3-08c2-4ba0-81a0-76117f6eb37d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:35577/IndividualClientWS.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IndividualClientWS.wsdl" MetadataType="Wsdl" ID="8b1b77f1-b11b-4479-8b51-72bacd9f0969" SourceId="1" SourceUrl="http://localhost:35577/IndividualClientWS.svc?wsdl" />
+    <MetadataFile FileName="IndividualClientWS1.wsdl" MetadataType="Wsdl" ID="bfd99298-e5fe-403e-92c9-79353dcdfcc4" SourceId="1" SourceUrl="http://localhost:35577/IndividualClientWS.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="IndividualClientWS.xsd" MetadataType="Schema" ID="1adf73dd-ce48-40e4-8fe8-f43bb6b84c08" SourceId="1" SourceUrl="http://localhost:35577/IndividualClientWS.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

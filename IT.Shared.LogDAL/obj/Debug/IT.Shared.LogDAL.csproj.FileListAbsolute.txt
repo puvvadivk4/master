@@ -1,0 +1,9 @@
+C:\testWCF\IT.Shared.LogDAL\bin\Debug\IT.Shared.LogDAL.dll
+C:\testWCF\IT.Shared.LogDAL\bin\Debug\IT.Shared.LogDAL.pdb
+C:\testWCF\IT.Shared.LogDAL\bin\Debug\IT.Shared.LogEntities.dll
+C:\testWCF\IT.Shared.LogDAL\bin\Debug\IT.Shared.WebCommon.dll
+C:\testWCF\IT.Shared.LogDAL\bin\Debug\IT.Shared.WebDatabase.dll
+C:\testWCF\IT.Shared.LogDAL\bin\Debug\IT.Shared.LogEntities.pdb
+C:\testWCF\IT.Shared.LogDAL\obj\Debug\IT.Shared.LogDAL.csprojResolveAssemblyReference.cache
+C:\testWCF\IT.Shared.LogDAL\obj\Debug\IT.Shared.LogDAL.dll
+C:\testWCF\IT.Shared.LogDAL\obj\Debug\IT.Shared.LogDAL.pdb

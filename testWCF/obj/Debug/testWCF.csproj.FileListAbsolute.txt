@@ -1,0 +1,6 @@
+C:\testWCF\testWCF\bin\Debug\testWCF.exe.config
+C:\testWCF\testWCF\bin\Debug\testWCF.exe
+C:\testWCF\testWCF\bin\Debug\testWCF.pdb
+C:\testWCF\testWCF\obj\Debug\testWCF.exe
+C:\testWCF\testWCF\obj\Debug\testWCF.pdb
+C:\testWCF\testWCF\obj\Debug\testWCF.csprojResolveAssemblyReference.cache

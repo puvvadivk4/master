@@ -1,0 +1,5 @@
+C:\testWCF\IT.Shared.LogEntities\bin\Debug\IT.Shared.LogEntities.dll
+C:\testWCF\IT.Shared.LogEntities\bin\Debug\IT.Shared.LogEntities.pdb
+C:\testWCF\IT.Shared.LogEntities\obj\Debug\IT.Shared.LogEntities.dll
+C:\testWCF\IT.Shared.LogEntities\obj\Debug\IT.Shared.LogEntities.pdb
+C:\testWCF\IT.Shared.LogEntities\obj\Debug\IT.Shared.LogEntities.csprojResolveAssemblyReference.cache
