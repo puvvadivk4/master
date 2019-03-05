@@ -1,0 +1,5 @@
+com\example\hrsh\demo\cntrller\PersonController.class
+com\example\hrsh\demo\services\PersonService.class
+com\example\hrsh\demo\repos\PersonRepository.class
+com\example\hrsh\demo\DemoApplication.class
+com\example\hrsh\demo\ents\Person.class
