@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XYZ>
+	<MyTeam tid="100">
+		<name>T1</name>
+		<Players>
+			<Myplayers pid="111">
+				<pname>A</pname>
+				<pscore>75</pscore>
+			</Myplayers>
+			<Myplayers pid="112">
+				<pname>B</pname>
+				<pscore>25</pscore>
+			</Myplayers>
+		</Players>
+		<score>100</score>
+	</MyTeam>
+	<MyTeam tid="101">
+		<name>T2</name>
+		<Players>
+			<Myplayers pid="222">
+				<pname>C</pname>
+				<pscore>100</pscore>
+			</Myplayers>
+			<Myplayers pid="223">
+				<pname>D</pname>
+				<pscore>20</pscore>
+			</Myplayers>
+		</Players>
+		<score>120</score>
+	</MyTeam>
+</XYZ>
