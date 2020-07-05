@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/train"
+	xmlns:tns="http://www.example.org/train" elementFormDefault="qualified">
+
+	<xs:element name="train-list-reply">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="train-list">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="train" maxOccurs="unbounded"
+								minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs:int" name="id" />
+										<xs:element type="xs:string" name="source" />
+										<xs:element type="xs:string" name="destination" />
+										<xs:element type="xs:date" name="schedule-date" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
